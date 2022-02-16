@@ -10,9 +10,11 @@ ways by programmers and by the system.
 For each of the registers below,
 give their symbolic name and describe their intended use:
 
-OR
+**OR**
 
 MIPS Scav Hunt!
+
+> ⌛ 5 Mins
 
 - [SPIM Instruction Set](https://cgi.cse.unsw.edu.au/~cs1521/22T1/resources/mips-guide.html)
 

@@ -1,6 +1,8 @@
 Q10
 ==========================================
 
+> If overtime, do this in a breakout room 💃 
+
 We are now the compiler! 💻
 
 Thank you for your service `dcc`,

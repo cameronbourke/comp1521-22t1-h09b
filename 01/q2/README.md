@@ -1,6 +1,8 @@
 Q2
 =======================================
 
+[ ] Poll on experience with C
+
 [ ] Go to Q2 on [Week 01 Tutorial Questions](https://cgi.cse.unsw.edu.au/~cs1521/22T1/tut/01/questions)
 
 [ ] Run over terminology

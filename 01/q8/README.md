@@ -7,7 +7,7 @@ What are `mipsy`, `spim`, `qtspim` & `xspim`?
 
 [ ] Run `./i_love_mips.s` with each.
 
-- Remeber that you need to run `mipsy` and `spim`
+- Remember that you need to run `mipsy` and `spim`
   on the CSE machines as follows:
   ```bash
   $ 1521 mipsy 
