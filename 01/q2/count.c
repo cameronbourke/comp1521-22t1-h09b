@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 int inc () {
-	// int static n = 0;
-	int n = 0;
+	int static n = 0;
+	// int n = 0;
 	n++;
 	return n;
 }
