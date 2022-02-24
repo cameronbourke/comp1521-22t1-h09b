@@ -11,6 +11,8 @@
 
 [ ] 🙂 [Acknowledgement of Country](./ack.md)
 
+[ ] 🥼 Preview Lab
+
 [ ] 🏫 [Tut Questions](q2/README.md)
 
 [ ] 👌 Top Picks
