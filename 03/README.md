@@ -1,8 +1,6 @@
 👋 Week 3
 =======================================
 
-[ ] 🎉 My Party Game
-
 [ ] 🎤 PSAs
 
 - This is the first week with a weekly test.

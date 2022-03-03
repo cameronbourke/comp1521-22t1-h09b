@@ -13,6 +13,10 @@ Address       Data Definition
 0x10010014         .word 7
 ```
 
+```
+lb   $t0, bb
+```
+
 Quickly have a go yourself. (⌛ 2mins)
 
 > Play some 🎵 elevator music.
