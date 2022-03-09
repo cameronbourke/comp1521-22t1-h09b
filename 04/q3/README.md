@@ -21,11 +21,13 @@ int max(int a[], int length) {
 }
 ```
 
+[ ] Draw a call graph for max()
+
 ```
---------------------------------------------
-| Imagine there are only 2 $s regs?,       |
-| how would you handle >2 local variables? |
---------------------------------------------
+------------------------------------------------
+| Imagine there are only 3 regs, $ra, $s0, $s1 |
+| how would you handle >2 local variables?     |
+------------------------------------------------
 ```
 
 > Go to `./max.s`
@@ -49,7 +51,9 @@ $ 1521 mipsy max_broken.s main.s
 it always return `1`, when the correct answer is `6`.
 
 I think it's time to get the debugger out!
-As a team, using `mipsy` try and work out what's going wrong 🕵️.
+
+With a little _pair programming_,
+try using `mipsy` to work out what's going wrong 🕵️.
 
 > Breakout rooms (⏳ ~10 mins)
 
@@ -62,7 +66,7 @@ As a team, using `mipsy` try and work out what's going wrong 🕵️.
 
 Let's now see together how you could find it!
 
-### Stack Allocation
+### Stack Allocation (Challenge Exercise)
 
 The approach of using `$s` registers for any local
 variables is convenient. However, what is the
@@ -73,10 +77,10 @@ drawback of this approach?
 "I've got 99 problems and not enough regs is one" - Nobody
 
 ```
---------------------------------------------
-| Imagine there are only 2 $s regs?,       |
-| how would you handle >2 local variables? |
---------------------------------------------
+------------------------------------------------
+| Imagine there are only 3 regs, $ra, $s0, $s1 |
+| how would you handle >2 local variables?     |
+------------------------------------------------
 ```
 
 > Let's have a look at `./02_two_reg.c`

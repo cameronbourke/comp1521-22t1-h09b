@@ -4,7 +4,7 @@ Q4
 Consider the following operation that multiplies
 all of the elements in a matrix by a constant factor:
 
-> Look at tut question 4
+> Look at tut question 4 (on the site)
 
 This operation could be rendered in C99-standard C as:
 
@@ -24,7 +24,7 @@ void change (
 ```
 
 Write a function in MIPS assembly equivalent to the above C code.
-Assume that the arguments are placed in the $a? registers in the
+Assume that the arguments are placed in the `$a?` registers in the
 order given in the function definition.
 e.g., the function could be called as follows in MIPS:
 
@@ -46,3 +46,5 @@ M:  	.word 1, 2, 3, 4
 ```
 
 > Go to `./change.s`
+
+> Look at `../memes/fat_fingers.png` 🤣
