@@ -18,7 +18,7 @@ if_cond_t:
 	#	return 42;
 	# }
 	li	$v0, 42
-	b	main__epilogue
+	j	main__epilogue
 
 main__epilogue:
 	pop	$s1		# lw	$s1, 0($sp)

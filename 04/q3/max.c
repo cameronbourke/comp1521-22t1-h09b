@@ -13,6 +13,7 @@ int max(int a[], int length) {
 		if (first_element > max_so_far) {
 			max_so_far = first_element;
 		}
+
 		return max_so_far;
 	}
 }

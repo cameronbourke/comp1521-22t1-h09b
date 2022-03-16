@@ -45,7 +45,7 @@ floating around that doesn't appear to be working properly.
 If you run:
 
 ```bash
-$ 1521 mipsy max_broken.s main.s
+$ 1521 mipsy main.s max_broken.s
 ```
 
 it always return `1`, when the correct answer is `6`.
