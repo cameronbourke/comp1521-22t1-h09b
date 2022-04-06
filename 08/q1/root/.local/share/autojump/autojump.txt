@@ -1,0 +1,3 @@
+20.0	/home/cambou/teach/comp1521/22t1/tuts/08/q1
+51.96152422706633	/home/cambou/teach/comp1521/22t1/tuts/08
+22.360679774997898	/home/cambou/teach/comp1521/22t1/tuts/08/q14-15
