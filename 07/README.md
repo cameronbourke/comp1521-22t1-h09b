@@ -15,7 +15,7 @@
 
 [ ] 🥼 [Lab Preview](https://cgi.cse.unsw.edu.au/~cs1521/21T3/lab/03/questions)
 
-[ ] 🏫 [Tut Questions](q1/README.md)
+[ ] 🏫 [Tut Questions](q2/README.md)
 
 [ ] 👌 Top Picks
 

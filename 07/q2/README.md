@@ -62,7 +62,7 @@ Let's try find the twos complement for: 0b01101
 The twos complement, like the 10s complement, involves
 subtracting each bit (binary digit) from 1 because
 
-	[2^5]								 [2^5 - 1]
+	[2^5]								 [(2^5 - 1) + 1]
 	0b100000 - 0b01101 = (0b11111 + 0b1) - 0b01101 
 										 = (0b11111 - 0b01101) + 0b1
 	That is why we flip the bits! 😮
@@ -84,7 +84,7 @@ Convert each to the corresponding decimal value.
 
 > When the number is feeling glass half full.
 
-	0x0444 = 0b0000 0100 0100 0100
+	0x0444 = 0b0000 0100 0100 0100 = 1092
 
 The steps are:
 
@@ -118,9 +118,26 @@ Is the most sig bit set?
 
 	If YES
 		i)   find ones complement (aka flip the bits)
+
+			   0b1000 0000 0000 0000
+			   0b0111 1111 1111 1111
+				
 		ii)  add one
+
+					 1111	1...			  11
+			   0b0111 1111 1111 1111
+			+  										 1
+				----------------------
+					 1000 0000 0000	0000 
+
+
 		iii) convert to decimal
+
+					 1000 0000 0000	0000 = 32768
+
 		iv)  add the negative sign
+
+					-32768
 
 ```c
 printf("%d\n", (int16_t)0x8000);

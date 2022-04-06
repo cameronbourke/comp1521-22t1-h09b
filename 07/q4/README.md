@@ -48,17 +48,33 @@ Note, _frac_ can also be called _mantissa_.
 
 It has to do with the following question.
 
-In twos complement, which is bigger? `0b10101110` or `0b11101100`
+In twos complement, which is smaller? `0b10101110` or `0b11101100`
 
 a. `0 00000000 00000000000000000000000`
 
++0
+
 b. `1 00000000 00000000000000000000000`
+
+-0
 
 - What jumps out about `a` and `b`?
 
 c. `0 01111111 10000000000000000000000`
 
 - Is `c` positive or negative?
+
+sign = 0b0					= 0
+exp  = 0b01111111	  = 127
+frac = 0b10000....  = 0.5
+
+	-1^0 x (1 + 0.5) x 2^(127 - 127)
+= 1 x (1.5) x 1
+= 1.5 x 1
+= 1.5
+
+
+
 
 d. `0 01111110 00000000000000000000000`
 
@@ -72,7 +88,19 @@ or [this visualiser](https://bartaz.github.io/ieee754-visualization/) by bartosz
 
 f. `0 10000000 01100000000000000000000`
 
+sign = 0b         = 0
+exp  = 0b10000000 = 128
+frac = 0b0110.... = 0.375
+
+		-1^0 x (1 + 0.375) x 2^(128 - 127)
+	= 1 x (1.375) x 2^1
+	= 1.375 x 2
+
+decimal = -1^sign x (1 + frac) x 2^(exp - 127)
+
 g. `0 10010100 10000000000000000000000`
+
+> Have a crack at it! 4 mins ⌛
 
 h. `0 01101110 10100000101000001010000`
 
@@ -102,9 +130,44 @@ IEEE 754-encoded bit-strings:
 
 a. `2.5`
 
+> Have a crack at it! 4 mins ⌛
+
 b. `0.375`
 
-c. `27.0`
+c. `27.5`
+
+27 = 16 + 8 + 3
+	 = 2^4 + 2^3 + 2^1 + 2^0
+	 = 0b11011
+
+.5 = 0b0.1 = 2^-1
+
+1. decimal => binary
+
+27.5 = 0b11011.1
+
+2. normalisation
+
+	0b11011.1 x 2^0
+= 0b1101.11 x 2^1
+= 0b110.111 x 2^2
+= 0b11.0111 x 2^3
+= 0b1.10111 x 2^4
+
+3. components
+
+sign = 0						 =  0b0
+exp  = 131 - 127 = 4 =  0b10000011
+frac = 									0b101110....
+
+s eeeeeeee fffffffffffffffffffffff
+0 10000011 10111000000000000000000
+
+
+
+
+
+
 
 d. `100.0`
 
