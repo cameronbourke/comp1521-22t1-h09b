@@ -33,8 +33,8 @@ int8_t signed_bits = unsigned_bits;
 char char_bits = unsigned_bits;
 
 printf("%hhu\n", unsigned_bits); // 137
-printf("%hhd\n", char_bits);		 // -119
 printf("%hhd\n", signed_bits);	 // -119
+printf("%hhd\n", char_bits);		 // -119
 
 // Fun fact! `char` is actually short for `signed char` 😮
 
@@ -49,14 +49,28 @@ Now, assume that we have the following `8-bit`
 variables defined and initialised.
 
 ```c
-uint8_t a = 0x55, b = 0xAA;
+uint8_t a = 0x55; // 0b01010101
+uint8_t b = 0xAA; // 0b10101010
 ```
 
 Quick review! Let's take a look at the [bitwise slides](https://cgi.cse.unsw.edu.au/~cs1521/22T1/flask_tutors.cgi/topic/bitwise_operations/slides)
 
 g. a & (b << 1)
 
-#TODO
+	b << 1 = 0b10101010 << 1
+				 = 0b01010100
+
+	0b01010101 & 0b01010100
+
+	a      : 0b01010101  
+	b << 1 : 0b01010100 &
+	         ------------
+	         0b01010100
+
+
+
+
+
 
 Hey! That expression `b << 1` looks a particular
 arithmetic operation. But, which one?

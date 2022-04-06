@@ -5,7 +5,7 @@ How does `C` interpret numbers?
 
 ```c
 int main () {
-	int x = 2; // what type is this?
+	int x = 0x2u; // what type is this?
 	...
 }
 ```

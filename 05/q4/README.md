@@ -1,5 +1,5 @@
 Q4
-=======================================
+====================================
 
 Consider a scenario where we have the following flags
 controlling access to a device.
