@@ -1,0 +1,13 @@
+sudo adduser jas
+cat /etc/passwd
+ls /home
+sudo chown jas stat.c
+sudo addgroup thu09c
+cat /etc/group
+su - jas
+sudo su -
+sudo userdel -r jas
+sudo usermod -aG thu09c cambou
+groups
+sudo gpasswd -d cambou thu09c
+sudo groupdel thu09c
