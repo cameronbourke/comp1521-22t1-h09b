@@ -16,10 +16,14 @@ int main(void) {
 	// See $ man fopen
 
 	// a. 
-	fopen(file_path, "r")
+	FILE* fp_a = fopen(file_path, "r")
+
+	int fd_a = open(file_path, O_RDONLY);
 
 	// b.
-	fopen(file_path, "a")
+	FILE* fp_b = fopen(file_path, "a")
+
+	int fd_b = open(file_path, O_WRONLY | O_APPEND | O_CREAT);
 
 	// c.
 	fopen(file_path, "w")

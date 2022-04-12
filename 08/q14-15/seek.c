@@ -8,9 +8,9 @@
 
 int main(int argc, char* argv[]) {
 	// $ dd if=/dev/zero of=exactly_10k_bytes.txt bs=10000 count=1
-	int fd = open("./exactly_10k_bytes.txt", O_RDONLY);
+	int fd = open("./exactly_10k_bytes_copy.txt", O_RDONLY);
 	if (fd < 0) {
-		perror(argv[1]);
+		perror(argv[0]);
 		return EXIT_FAILURE;
 	}
 
@@ -20,6 +20,11 @@ int main(int argc, char* argv[]) {
 
 	// a. 
 	off_t offset = lseek(fd, 0, SEEK_END);
+
+	offset = lseek(fd, 50 * 1000, SEEK_SET);
+	printf("%llu\n", offset);
+
+	printf("%d\n", write(fd, 'h', 1));
 
 	// b.
 	offset = lseek(fd, -1000, SEEK_CUR);
@@ -35,6 +40,8 @@ int main(int argc, char* argv[]) {
 
 	// f.
 	offset = lseek(fd, 1000, SEEK_CUR);
+
+	// z.
 
 	printf("offset: %ld\n", offset);
 
