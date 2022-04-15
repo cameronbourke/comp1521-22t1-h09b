@@ -33,3 +33,4 @@ void stat_file(char *pathname) {
     printf("st_mtime   = %10ld # Time of last modification\n", (long)s.st_mtime);
     printf("st_ctime   = %10ld # Time of last status change\n", (long)s.st_ctime);
 }
+delete me

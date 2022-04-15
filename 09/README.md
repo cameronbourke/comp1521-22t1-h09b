@@ -15,7 +15,7 @@
 
 [ ] 🏫 [Tut Questions](q1/README.md)
 
-[ ] 👷 [Assignment 2 Overview](https://cgi.cse.unsw.edu.au/~cs1521/22T1/assignments/ass2/index.html)
+[ ] 👷 [Assignment 2 Q&A](https://cgi.cse.unsw.edu.au/~cs1521/22T1/assignments/ass2/index.html)
 
 [ ] 👌 Top Picks
 
